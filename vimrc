@@ -9,7 +9,7 @@
 "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
 let $vimhome=fnamemodify(resolve(expand("~/.vimrc")), ':p:h')
-let $vundle=$vimhome."/bundle/Vundle.vim"
+let $vundle="~/.vim/bundle/Vundle.vim"
 
 " Be iMproved
 set nocompatible
