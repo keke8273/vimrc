@@ -38,7 +38,8 @@ call vundle#begin()
     Plugin 'flazz/vim-colorschemes'             " Colorschemes
 
     "-------------------=== Snippets support ===--------------------
-    Plugin 'SirVer/ultisnips'
+    Plugin 'SirVer/ultisnips'                   " ulti snips
+    Plugin 'ervandew/supertab'                  " super tab
     Plugin 'honza/vim-snippets'                 " snippets repo
 
     "-------------------=== Languages support ===-------------------
@@ -138,9 +139,9 @@ nmap " :NERDTreeToggle<CR>
 "=====================================================
 "" Ultisnips settings
 "=====================================================
-let g:UltiSnipsExpandTrigger="<Tab>"
-let g:UltiSnipsJumpForwardTrigger="<Tab>"
-let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsUsePythonVersion = 3
 
 "=====================================================
@@ -153,8 +154,8 @@ let g:riv_disable_folding=1
 "=====================================================
 
 " python executables for different plugins
-let g:pymode_python='python'
-let g:syntastic_python_python_exec='python'
+let g:pymode_python='python3'
+let g:syntastic_python_python_exec='python3'
 
 " rope
 let g:pymode_rope=0
@@ -243,6 +244,6 @@ nmap <leader>g :YcmCompleter GoTo<CR>
 nmap <leader>d :YcmCompleter GoToDefinition<CR>
 
 " compatible with utilsnip
-let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
-let g:ycm_key_list_select_completion = ['<C-y>']
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
