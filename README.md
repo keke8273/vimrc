@@ -2,6 +2,7 @@
 * install git
 * install autoreconfig
 * install vundle git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+* compile YouCompleteMe by executing ~/.vim/bundle/YouCompleteMe/install.sh
 
 
 * download https://github.com/universal-ctags/ctags.git
